@@ -66,7 +66,7 @@ h3{
 #add-transactions{
     padding: 0rem 2rem 3rem 2rem;
     text-align: center;
-    height: 150vh;
+    height: 100h;
     background-color: #f3f4f6 ;
     position: fixed;
     transform: translateY(100vh);
