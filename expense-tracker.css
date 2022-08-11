@@ -1,0 +1,246 @@
+/* General and Top */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: roboto;
+}
+
+body{
+    background-color: #f3f4f6;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 4rem;
+    color:#4c525a;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#4c525a;
+    text-align: center;
+}
+h3{
+  font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color:#4c525a;
+}
+
+/* Display Board */
+#display-board{
+    text-align: center;
+    margin: 3rem 2rem;
+    padding: 2rem 1.5rem;
+    color: white;
+    background-image: linear-gradient( 135deg, #35ace5, #d36deb, #f9917a );
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#display-board>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+#total-balance-text{
+    font-size: 1.8rem;
+}
+#total-balance-number{
+    font-size: 5rem;
+}
+.transaction-text{
+    font-size: 1.6rem;
+    text-align: left;
+}
+#total-income, #total-expenses{
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+
+/* Add Transaction Section */
+#add-transactions{
+    padding: 0rem 2rem 3rem 2rem;
+    text-align: center;
+    height: 100vh;
+    background-color: #f3f4f6 ;
+    position: fixed;
+    transform: translateY(100vh);
+    width: 100%;
+    margin-top: -4rem;
+    transition: all 0.4s ease;
+}
+#plus-btn{
+    border: none;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    background:linear-gradient( 135deg, #f9917a, #d36deb, #35ace5);
+    margin: -10rem auto 0 auto;
+    transition: all 0.3s ease;
+}
+
+#income-btn:hover, #income-btn:active, #expense-btn:hover, #expense-btn:active{
+    background: linear-gradient( 135deg, #35ace5, #d36deb, #f9917a ) ;
+    color: white;
+}
+#transaction-form{
+    margin-top: 6rem;
+}
+#transaction-form>h2{
+    margin-bottom: 2rem;
+}
+
+
+/* Loader Aimation */
+.lds-ellipsis {
+    display: none;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+    background: #35ace5;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+    background: #d36deb;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+    background: #f9917a;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+    background: #35ace5;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(19px, 0);
+    }
+  }
+
+/* Income and Expense Form */
+#income-form{
+    min-width: 100%;
+    margin-bottom: 5rem;
+}
+#expense-form{
+    min-width: 100%;
+}
+#income-figure, #expense-figure{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #7990af;
+}
+#income-text, #expense-text{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #7990af;
+}
+#income-submit, #expense-submit{
+    width: 100%;
+    padding:1rem 4rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    background: linear-gradient( 135deg, #35ace5, #d36deb, #f9917a );
+    margin-top: 1rem;
+}
+
+
+
+/* Transaction History and Clear Button */
+#transaction-history{
+    margin: 0 2rem 20vh 2rem;
+}
+ul{
+    margin-left: 0;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+li p{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.note{
+    color:#738092;
+}
+.expense-cost{
+    color:red;
+}
+.income-cost{
+    color:rgb(81, 223, 81);
+}
+#clear-btn{
+    background: linear-gradient( 135deg, #d36deb, #f9917a );
+    width: 100%;
+    padding:1rem 4rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+}
+#clear-btn:active{
+  color:#4c525a;
+  background: #f3f4f6;
+  border: 1px solid #4c525a;
+}

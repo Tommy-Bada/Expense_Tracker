@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="expense-tracker.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <section id="add-transactions">
+        <div><button id="plus-btn">+</button></div>
+        <div class="lds-ellipsis">
+                <div></div><div></div><div></div><div></div>
+        </div>
+        <div id="transaction-form">
+            <form id="income-form">
+                <h2>Income Here</h2>
+                <input type="number" id="income-figure" placeholder="Amount" name="income_figure"/><br>
+                <input type="text" id="income-text" placeholder="Note" name="income_text"/><br>
+                <input type="submit" id="income-submit" value="ADD"/>
+            </form>
+            <form id="expense-form">
+                <h2>Expense Here</h2>
+                <input type="number" id="expense-figure" placeholder="Amount" name="expense_figure"/><br>
+                <input type="text" id="expense-text" placeholder="Note" name="expense_text"/><br>
+                <input type="submit" id="expense-submit" value="ADD"/>
+            </form>
+        </div>
+    </section>
+    <h1>Expense Tracker</h1>
+    <section id="display-board">
+        <p id="total-balance-text"> Total Balance</p>
+        <p id="total-balance-number"><img src="images/naira.png" height="35px"/>0.00</p>
+        <div>
+            <div>
+                <p class="transaction-text">Income</p>
+                <p id="total-income"><img src="images/naira.png" height="15px"/>0.00</p>
+            </div>
+            <div>
+                <p class="transaction-text">Expenses</p>
+                <p id="total-expenses"><img src="images/naira.png" height="15px"/>0.00</p>
+            </div>
+        </div>
+    </section>
+    <section id="transaction-history">
+        <h2>History</h2>
+        <h3>Income</h3>
+        <ul id="income-history">
+            <!-- <li>
+                <p class="note">Bread and Egg</p>
+                <p class="expense-cost"><img src="images/red-naira.png" height="11px" />500</p>
+            </li>
+            <li>
+                <p class="note">Papa</p>
+                <p class="income-cost"><img src="images/green-naira.png" height="11px" />5000</p>
+            </li> -->
+        </ul>
+        <h3>Expenses</h3>
+        <ul id="expense-history">
+
+        </ul>
+        <button id="clear-btn">CLEAR ALL</button>
+    </section>
+<script src="expense-tracker.js"></script>
+</body>
+</html>
