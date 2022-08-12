@@ -85,6 +85,7 @@ h3{
     background:linear-gradient( 135deg, #f9917a, #d36deb, #35ace5);
     margin: -10rem auto 0 auto;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 #income-btn:hover, #income-btn:active, #expense-btn:hover, #expense-btn:active{
