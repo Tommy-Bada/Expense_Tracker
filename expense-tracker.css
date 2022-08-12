@@ -76,10 +76,10 @@ h3{
 }
 #plus-btn{
     border: none;
-    width: 7rem;
-    height: 7rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 50%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: white;
     background:linear-gradient( 135deg, #f9917a, #d36deb, #35ace5);
@@ -162,7 +162,7 @@ h3{
 /* Income and Expense Form */
 #income-form{
     min-width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 #expense-form{
     min-width: 100%;
