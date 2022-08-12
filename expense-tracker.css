@@ -180,10 +180,7 @@ h3{
     color: #7990af;
 }
 input:focus{
-  border-color: linear-gradient( 135deg, #35ace5, #d36deb, #f9917a );
-  border-radius: 2rem;
-  border-style: solid;
-  border-width: 1px;
+  outline-color: #d36deb;
 }
 #income-text, #expense-text{
     width: 100%;
