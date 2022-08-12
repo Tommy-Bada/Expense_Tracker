@@ -40,7 +40,7 @@ function addIncome(){
 
     // Add to Total Balance
     balance += Number(incomeFigure.value);
-    totalBalance.innerHTML = `<img src="images/naira.png" height="35px"/>${balance.toLocaleString()}`;
+    totalBalance.innerHTML = `<img src="images/naira.png" height="28px"/>${balance.toLocaleString()}`;
 
     //Add to history
     let newIncome = document.createElement("li")
@@ -109,7 +109,7 @@ function addExpense(){
 
     // Subtract from Total Balance
     balance -= Number(expenseFigure.value);
-    totalBalance.innerHTML = `<img src="images/naira.png" height="35px"/>${balance.toLocaleString()}`
+    totalBalance.innerHTML = `<img src="images/naira.png" height="28px"/>${balance.toLocaleString()}`
 
     //Add to History
     let newExpense = document.createElement("li")
@@ -179,7 +179,7 @@ function getIncome(){
     
         // Add to Total Balance
         balance += Number(object.amount);
-        totalBalance.innerHTML = `<img src="images/naira.png" height="35px"/>${balance.toLocaleString()}`;
+        totalBalance.innerHTML = `<img src="images/naira.png" height="28px"/>${balance.toLocaleString()}`;
     
         //Add to history
         let newIncome = document.createElement("li")
@@ -212,7 +212,7 @@ function getExpense(){
     
         // Add to Total Balance
         balance -= Number(object.amount);
-        totalBalance.innerHTML = `<img src="images/naira.png" height="35px"/>${balance.toLocaleString()}`;
+        totalBalance.innerHTML = `<img src="images/naira.png" height="28px"/>${balance.toLocaleString()}`;
     
         //Add to history
         let newIncome = document.createElement("li")
@@ -238,7 +238,7 @@ function clearThings(){
     let totalExpense = document.querySelector("#total-expenses");
     totalExpense.innerHTML = `<img src="images/naira.png" height="15px"/>0.00`;
 
-    totalBalance.innerHTML = `<img src="images/naira.png" height="35px"/>0.00`;
+    totalBalance.innerHTML = `<img src="images/naira.png" height="28px"/>0.00`;
 
     let incomeHistoryContainer = document.querySelector("#income-history");
     incomeHistoryContainer.innerHTML = "";
