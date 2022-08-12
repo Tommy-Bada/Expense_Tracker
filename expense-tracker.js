@@ -118,8 +118,8 @@ function addExpense(){
     historyContainer.appendChild(newExpense);
     storeExpensesInLs(expenseFigure.value, expenseText.value)
 
-    expenseFigure.value = "0.00"
-    expenseText.value = "Note"
+    expenseFigure.value = ""
+    expenseText.value = ""
 }
 expenseForm.addEventListener("submit", function(e){
 
