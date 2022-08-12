@@ -10,7 +10,7 @@ function addTranscationSectionSlide(){
     else{
         addTransSection.style.transform = "translateY(100vh)";
         plusBtn.innerHTML = "+"
-        plusBtn.style.marginTop = "-10rem"
+        plusBtn.style.marginTop = "-9rem"
     }
 }
 plusBtn.addEventListener("click", addTranscationSectionSlide);

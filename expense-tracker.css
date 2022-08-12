@@ -83,7 +83,7 @@ h3{
     font-weight: 700;
     color: white;
     background:linear-gradient( 135deg, #f9917a, #d36deb, #35ace5);
-    margin: -10rem auto 0 auto;
+    margin: -9rem auto 0 auto;
     transition: all 0.3s ease;
     text-align: center;
 }
