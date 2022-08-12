@@ -66,7 +66,7 @@ incomeForm.addEventListener("submit", function(e){
     else{
 
     document.querySelector("#transaction-form").style.display = "none";
-    loading.style.marginTop = "35vh"
+    loading.style.marginTop = "20vh"
     loading.style.display = "inline-block"
 
     setTimeout(addIncome, 1000);
@@ -135,7 +135,7 @@ expenseForm.addEventListener("submit", function(e){
     else{
 
     document.querySelector("#transaction-form").style.display = "none";
-    loading.style.marginTop = "35vh"
+    loading.style.marginTop = "40vh"
     loading.style.display = "inline-block"
 
     setTimeout(addExpense, 1000);
